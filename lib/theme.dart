@@ -82,7 +82,7 @@ InputDecoration searchDecoration = InputDecoration(
     borderRadius: BorderRadius.circular(28),
     borderSide: BorderSide.none,
   ),
-  hintText: "Find your dream home",
+  hintText: "Encuentra la casa de tus sueños",
   contentPadding: EdgeInsets.symmetric(
     horizontal: 20,
     vertical: 19,

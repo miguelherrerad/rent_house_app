@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: whiteColor,
+      //Ctrl + . para usar Wrap
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -21,6 +22,25 @@ class HomePage extends StatelessWidget {
                   icon: Image.asset(
                     "assets/images/menu_icon.png",
                     width: 18,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 30.0, top: 30.0),
+                child: Text(
+                  "Encuentra tu\nlugar perfecto",
+                  style: primaryTitle,
+                ),
+              ),
+              //NOTE: search
+              Container(
+                padding: EdgeInsets.all(30),
+                child: Material(
+                  elevation: 6,
+                  shadowColor: shadowColor,
+                  borderRadius: BorderRadius.circular(28),
+                  child: TextField(
+                    decoration: searchDecoration,
                   ),
                 ),
               ),

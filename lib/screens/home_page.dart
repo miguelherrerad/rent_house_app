@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rent_house_app/screens/detail_page.dart';
 import 'package:rent_house_app/theme.dart';
 
 class HomePage extends StatelessWidget {
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 30.0, top: 30.0),
                 child: Text(
-                  "Find Your\nPerfect Place!",
+                  "Encuentra tu\nlugar perfecto!",
                   style: primaryTitle,
                 ),
               ),
@@ -50,21 +51,28 @@ class HomePage extends StatelessWidget {
               Container(
                 height: 216,
                 child: ListView(
-                  padding: EdgeInsets.only(bottom: 10),
+                  padding: EdgeInsets.only(bottom: 10, right: 30),
                   scrollDirection: Axis.horizontal,
                   children: [
                     SizedBox(width: 30),
                     SliderCard(
                       imageUrl: "assets/images/banner1.png",
-                      title: "Modern House",
-                      city: "Bandung",
+                      title: "Casa Moderna",
+                      city: "Zamora Huayco",
                       rating: 5,
                     ),
                     SizedBox(width: 30),
                     SliderCard(
                       imageUrl: "assets/images/banner2.png",
-                      title: "White House",
-                      city: "Jakarta",
+                      title: "Casa Nueva",
+                      city: "Pradera",
+                      rating: 4,
+                    ),
+                    SizedBox(width: 30),
+                    SliderCard(
+                      imageUrl: "assets/images/banner1.png",
+                      title: "Depto Nuevo",
+                      city: "San Cayetano",
                       rating: 4,
                     ),
                   ],
@@ -74,32 +82,32 @@ class HomePage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 30, top: 30, bottom: 12),
                 child: Text(
-                  "Recommended For You",
+                  "Recomendados para ti",
                   style: secondaryTitle,
                 ),
               ),
               RecommendCard(
                 imageUrl: "assets/images/house1.png",
-                title: "Wooden House",
-                city: "Bandung",
+                title: "Casa Campestre",
+                city: "Zona Militar",
                 rating: 4,
               ),
               SizedBox(height: 16),
               RecommendCard(
                 imageUrl: "assets/images/house2.png",
-                title: "Wooden House",
-                city: "Bogor",
+                title: "Hostería La Laguna",
+                city: "Malacatos",
                 rating: 5,
               ),
               SizedBox(height: 16),
               RecommendCard(
                 imageUrl: "assets/images/house3.png",
-                title: "Hill House",
-                city: "Makasar",
+                title: "Villa",
+                city: "Vilcabamba",
                 rating: 3,
               ),
               SizedBox(
-                height: 60,
+                height: 30,
               ),
             ],
           ),

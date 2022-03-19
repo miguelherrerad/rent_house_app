@@ -77,7 +77,7 @@ TextStyle priceText = TextStyle(
 // Input Decoration Style
 InputDecoration searchDecoration = InputDecoration(
   filled: true,
-  fillColor: whiteColor,
+  fillColor: Colors.grey[200],
   border: OutlineInputBorder(
     borderRadius: BorderRadius.circular(28),
     borderSide: BorderSide.none,
